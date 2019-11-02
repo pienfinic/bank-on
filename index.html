@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="lib/framework7/core/css/framework7.min.css"/>
+		<!--<link rel="stylesheet" href="lib/framework7/framework7.ios.min.css"/>-->
+		<link rel="stylesheet" href="lib/framework7-icons.css" />
+		<link rel="stylesheet" href="lib/framwork7.md.icons.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	</head>
+
+	<body>
+		<div id="app">
+			<div  class="view main-view">
+				<div class="page navbar-fixed" data-name="pagePrincipale">
+
+					<div style="background-color:white;"; class="page-content">
+						<div style="background-color:white; width:100%; height:60%;" >
+							<center>
+								<img style="margin-top:49px;" src="img/images (2).jpeg" width="" />
+								<p style="margin-top:-18px; font-family:Arial; font-size:30px; color:black; " >
+									Guichets
+								</p>
+								<p style="font-size:17px; font-family:italic; color:black;">
+									Bienvenu dans notre systeme qui te permet de savoir l'etat des guichets,gagne ton temps pour le retrait de l'argent avec la precision.
+								</p>
+
+							</center>
+						</div>
+						<div style="background-color:#031537; width:100%; height:40%;" >
+							<br />
+							<div style="text-align: center;width:100%;">
+								<button id="btnInstalation" style="width:150px;display:inline-block!important; background-color:white; color:black;" class="col button button-fill button-round popup-open" data-popup=".popup-about">
+									suivant <i class="icon material-icons ">play_arrow</i>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="popup popup-about">
+						<div style="background-color:#031537;" class="navbar">
+							<div class="navbar-inner">
+								<div class="center" style="padding-left:5px;">
+									<a href="/apropos/"><h3 style="color:#ffc107;">Guichets</h3></a>
+								</div>
+								<div class="right">
+									<a href="#" class="link"> <i class="icon material-icons open-preloader">autorenew</i> </a>
+									<a href="#" class="link popover-open" data-popover=".popover-about"> <i class="icon material-icons ">arrow_drop_down</i> </a>
+								</div>
+							</div>
+						</div>
+						<div id="loardPart" style="padding-top:0px;" class="page-content">
+							<div style="background-color:;" class="popover popover-about">
+								<div class="popover-inner">
+									<div class="block">
+										<p style="text-align:center; font-size:25px; color:black;">
+											Liste des Banques
+										</p>
+										<div class="filtre">
+											<ul style="list-style:none; color:black!important; font-size:17px;" id="filtre">
+												<li value="*">
+													<i class="icon material-icons ">check_circle</i> Toutes les banques
+												</li>
+												<li value="tmb">
+													<a style="color:black;" class="list-button item-link tmb" href="#"><i class="icon material-icons ">check_circle</i> TMB </a>
+												</li>
+												<li value="rawbank">
+													<a style="color:black;"  class="list-button item-link rawbank" href="#"><i class="icon material-icons ">check_circle</i> Rawbank </a>
+												</li>
+												<li value="equity">
+													<a style="color:black;"  class="list-button item-link equity" href="#"><i class="icon material-icons ">check_circle</i> Equity Bank</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="list media-list">
+								<ul id="listeBanques">
+									<style>
+										.etat {
+											text-align: center;
+											border-radius: 10px;
+											width: 15px;
+											height: 15px;
+										}
+
+										.etat.on {
+											background-color: green;
+										}
+
+										.etat.off {
+											background-color: red;
+										}
+									</style>
+									<li class="tmb oneDab" key="1" >
+										<a href="#" class="item-link item-content ">
+										<div class="item-media">
+											<div class="etat"></div>
+										</div>
+										<div class="item-inner">
+											<div class="item-title-row">
+												<div id="nomBanque1" class="item-title">
+													TMB
+												</div>
+											</div>
+											<div class="item-subtitle">
+												AGENCE PRINCIPALE
+											</div>
+											<div class="item-text">
+												20, avenue Karisimbi - Les Volcans
+												Tel.: 081 993 7026
+												Fax: +32 2 791 92 35
+
+											</div>
+										</div></a>
+									</li>
+
+									<li class="tmb oneDab" key="2">
+										<a href="#" class="item-link item-content">
+										<div class="item-media">
+											<div class="etat"></div>
+										</div>
+										<div class="item-inner">
+											<div class="item-title-row">
+												<div id="nomBanque2" class="item-title">
+													TMB
+												</div>
+											</div>
+											<div class="item-subtitle">
+												JAMBO SAFARI
+											</div>
+											<div class="item-text">
+												360, avenue Walikale – Les Volcans
+												Tel.: 081 830 9820
+											</div>
+										</div></a>
+									</li>
+									<li class="tmb oneDab" key="3">
+										<a href="#" class="item-link item-content">
+										<div class="item-media">
+											<div class="etat"></div>
+										</div>
+										<div class="item-inner">
+											<div class="item-title-row">
+												<div id="nomBanque3" class="item-title">
+													TMB
+												</div>
+											</div>
+											<div class="item-subtitle">
+												MAIRIE
+											</div>
+											<div class="item-text">
+												23, avenue Karisimbi – Mikeno
+												Tel.: 081 707 4990
+											</div>
+										</div> </a>
+									</li>
+									<li class="tmb oneDab" key="4">
+										<a href="#" class="item-link item-content">
+										<div class="item-media">
+											<div class="etat"></div>
+										</div>
+										<div class="item-inner">
+											<div class="item-title-row">
+												<div id="nomBanque4" class="item-title">
+													TMB
+												</div>
+											</div>
+											<div class="item-subtitle">
+												IHUSI HOTEL
+											</div>
+											<div class="item-text">
+												16, avenue Corniche – Boulevard Kanyamuhanga – Les Volcans
+												Tel.: 081 710 1885
+											</div>
+										</div> </a>
+									</li>
+
+									<li class="tmb oneDab" key="5">
+										<a href="#" class="item-link item-content">
+										<div class="item-media">
+											<div class="etat"></div>
+										</div>
+										<div class="item-inner">
+											<div class="item-title-row">
+												<div id="nomBanque5" class="item-title">
+													TMB
+												</div>
+											</div>
+											<div class="item-subtitle">
+												GRANDE BARRIERE
+											</div>
+											<div class="item-text">
+												4606, avenue Corniche – Grande Barrière – Les Volcans
+												Tél. : 082 008 3565
+											</div>
+										</div> </a>
+									</li>
+									<li class="tmb oneDab" key="6">
+										<a href="#" class="item-link item-content">
+										<div class="item-media">
+											<div class="etat"></div>
+										</div>
+										<div class="item-inner">
+											<div class="item-title-row">
+												<div id="nomBanque6" class="item-title">
+													TMB
+												</div>
+											</div>
+											<div class="item-subtitle">
+												Michael Jackson
+											</div>
+											<div class="item-text">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.
+											</div>
+										</div> </a>
+									</li>
+									<li class="rawbank oneDab" key="7">
+										<a href="#" class="item-link item-content">
+										<div class="item-media">
+											<div class="etat"></div>
+										</div>
+										<div class="item-inner">
+											<div class="item-title-row">
+												<div id="nomBanque6" class="item-title">
+													RAWBANK
+												</div>
+											</div>
+											<div class="item-subtitle">
+												AGENCE PRINCIPALE
+											</div>
+											<div class="item-text">
+												17153, boulevard Karisimbi, Quartier Les Volcans
+												+243 99 86 11 324
+												Tshibasu.Constantin@rawbank.cd
+											</div>
+										</div> </a>
+									</li>
+									<li class="equity oneDab" key="8">
+										<a href="#" class="item-link item-content">
+										<div class="item-media">
+											<div class="etat"></div>
+										</div>
+										<div class="item-inner">
+											<div class="item-title-row">
+												<div id="nomBanque6" class="item-title">
+													EQUITY
+												</div>
+											</div>
+											<div class="item-subtitle">
+												AGENCE PRINCIPALE
+											</div>
+											<div class="item-text">
+												Boulevard. Kanyamuhanga,N 28, C/Goma;
+												Tel : +243818302700;
+											</div>
+										</div> </a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="lib/framework7/core/js/framework7.min.js"></script>
+		<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+		<script type="text/javascript">
+			var myApp = new Framework7({
+				id : 'com.guichet.gdr',
+				root : "#app",
+				theme : "md",
+				modalTitle : 'guiche',
+				material : true,
+				init : true,
+				on : {
+					init : function() {
+					}
+				}
+
+			});
+
+			var $$ = Dom7;
+
+			var mainView = myApp.views.create('.main-view', {
+				//domCache : true, //enable inline pages
+				//iosDynamicNavbar : false
+
+			});
+
+			mainView.router.load("");
+			//myApp.popup.open("#popup-about");
+
+			var $$$ = Framework7.request;
+
+			$(document).ready(function() {
+
+				if (localStorage.connecte) {
+					//alert("Connecte");
+					myApp.popup.open(".popup-about");
+				} else {
+					//alert("Non connecte");
+				}
+
+				$("#btnInstalation").click(function() {
+					localStorage.connecte = true;
+				});
+
+				var variable = $("div#nomBanque").text();
+				var n = variable.trim();
+				console.log(n);
+				var message = $("#selecteBTN").val();
+				var donnees = {
+					"ac" : 1,
+				};
+				setInterval(function() {
+					$.post("https://www.nfinic.com/guichet/controleur.php", donnees, function(data) {
+						data = eval(data);
+						var etat;
+
+						for (var i = 0; i < data.length; i++) {
+							etat = data[i].etat == "1" ? "on" : "off";
+							$(".oneDab[key='" + (i + 1) + "'] .etat").addClass(etat);
+						}
+					});
+
+				}, 3000);
+				$$('.open-preloader').on('click', function() {
+					myApp.dialog.preloader();
+					setTimeout(function() {
+						location.reload();
+						myApp.dialog.close();
+					}, 3000);
+				});
+
+				$("#filtre li").on("click", function() {
+					var bank = $(this).attr("value");
+					if (bank == "*") {
+						$("#listeBanques li").show();
+					} else {
+						$("#listeBanques li").hide();
+						$("#listeBanques li." + bank).show();
+					}
+				});
+
+				$("i btnok").click(function() {
+					alert("good");
+				});
+
+			});
+
+		</script>
+	</body>
+</html>
